@@ -111,7 +111,7 @@ export default function LoginPage() {
         className={`py-3 px-6 w-full bg-blue-500 text-white rounded-md focus:outline-none ${buttonDisabled || loading ? "opacity-50 cursor-not-allowed" : "hover:bg-blue-600"}`}>
         {loading ? "Processing..." : "Login"}
       </button>
-      <p className="text-center text-sm text-gray-600 dark:text-gray-400">Dont have an account? <Link href="/signup" className="text-blue-500 hover:text-blue-600">Signup here</Link></p>
+      <p className="text-center text-sm text-gray-600 dark:text-gray-400">Dont you have an account? <Link href="/signup" className="text-blue-500 hover:text-blue-600">Signup here</Link></p>
     </form>
 
   </div>
