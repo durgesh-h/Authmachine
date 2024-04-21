@@ -42,12 +42,12 @@ export default function ProfilePage() {
     }
 
     return (
-<div className="min-h-screen roboto bg-gray-300  flex flex-col justify-center items-center">
-    <div className="  bg-gradient-to-r from-blue-900 to-purple-900 shadow-xl  rounded-md p-8 mb-8 max-w-lg m-6" >
-        <div className="flex justify-center items-center mb-6">
+<div className="min-h-screen roboto bg-gray-300  bg-gradient-to-r from-blue-900 to-purple-900  flex flex-col justify-center items-center">
+    <div className="  bg-gradient-to-r from-blue-700 to-purple-700 shadow-xl  rounded-md p-8 mb-8 max-w-lg m-6" >
+        <div className="flex justify-center items-center mb-12">
             <Image src={second} alt="Profile" className="w-24 h-24 rounded-full" />
         </div>
-        <div className="text-center mb-6">
+        <div className="text-center mb-10">
             <h1 className="text-3xl font-bold text-white">{username}</h1>
             <p className="text-gray-500">@{username}</p>
         </div>
@@ -61,16 +61,20 @@ export default function ProfilePage() {
                 <p className="text-gray-600">{email}</p>
             </div>
         </div>
-        <p className="text-gray-300 text-center mt-6">To check details, click on the <span className="text-blue-400 underline hover:text-blue-300 cursor-pointer" onClick={getUserDetails}>GetUserDetails.</span> </p>
-    </div>
-    <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+        <p className="text-gray-300 text-center mt-8">To check details, click on the <span className="text-blue-400 underline hover:text-blue-300 cursor-pointer" onClick={getUserDetails}>GetUserDetails.</span> </p>
+        <div className="flex flex-col mt-10 justify-center md:flex-row space-y-4 md:space-y-0 md:space-x-4">
         <button
             onClick={logout}
             className="bg-red-700 hover:bg-red-900 text-white font-bold py-2 px-4 rounded w-full md:w-auto"
         >
             Logout
         </button>
+        
     </div>
+    <p className="text-center mt-10 text-sm text-gray-800 dark:text-gray-900">Developed by <Link href="#" className="text-gray-900 hover:text-gray-800"> Durgesh Prasad</Link></p>
+
+    </div>
+   
 </div>
 
 

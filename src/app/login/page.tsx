@@ -74,12 +74,12 @@ export default function LoginPage() {
     //         <Link href="/signup">Visit Signup page</Link>
     //     </div>
         // sdfghjjlk
-        <div className="flex justify-center  roboto items-center h-screen bg-gray-300">
+        <div className="flex justify-center bg-gradient-to-r from-blue-900 to-purple-900  roboto items-center h-screen bg-gray-300">
 
-  <div className="max-w-md w-full m-4 p-6 md:p-8 bg-gradient-to-r from-blue-900 to-purple-900 shadow-xl  rounded-lg">
+  <div className="max-w-md w-full p-6 m-4 md:p-8 bg-gradient-to-r from-blue-700 to-purple-700 rounded-xl" >
 
-  <h1 className="text-2xl font-semibold text-center text-blue-300  mb-4">Welcome to AMR Construction</h1>
-    <h2 className="text-white font-bold text-center text-2xl mb-6">Login</h2>
+  <h1 className="text-2xl font-bold text-center text-black  mb-20">Welcome to AuthMachine</h1>
+    <h2 className="text-white font-bold text-center text-2xl mb-20">Login</h2>
 
     <form className="space-y-4">
      
@@ -111,8 +111,9 @@ export default function LoginPage() {
         className={`py-3 px-6 w-full bg-blue-500 text-white rounded-md focus:outline-none ${buttonDisabled || loading ? "opacity-50 cursor-not-allowed" : "hover:bg-blue-600"}`}>
         {loading ? "Processing..." : "Login"}
       </button>
-      <p className="text-center text-sm text-gray-600 dark:text-gray-400">Dont you have an account? <Link href="/signup" className="text-blue-500 hover:text-blue-600">Signup here</Link></p>
+      <p className="text-center text-sm text-gray-600 dark:text-gray-400">Dont you have an account? <Link href="/signup" className="text-blue-300 hover:text-blue-500">Signup here</Link></p>
     </form>
+    <p className="text-center mt-8 text-sm text-gray-800 dark:text-gray-900">Developed by <Link href="#" className="text-gray-900 hover:text-gray-800"> Durgesh Prasad</Link></p>
 
   </div>
 
